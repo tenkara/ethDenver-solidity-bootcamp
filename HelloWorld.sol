@@ -7,10 +7,13 @@ interface IHelloWOrld {
 }
 contract HelloWorld {
     string private text;
+    address public owner;
 
     constructor(string memory myText) {
         text = myText;
+        owner = msg.sender;
     }
+    
     function helloworld () public view returns (string memory) {
         return text;
     }
@@ -44,5 +47,16 @@ contract HelloWorld {
         if(_isPure()) return false;
         _restore();
         return true;
+    }
+
+    /// @notice Transfer ownership of the contract
+    /// @notice Requires current owner to make the transfer
+    function transferOwnership(address newOwner) public onlyOwner {
+        owner = newOwner;
+    }
+
+    modifier onlyOwner() {
+        require (msg.sender == owner, "Caller is not the owner");
+        _;
     }
 }
