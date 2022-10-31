@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "helloworld",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newText",
+						"type": "string"
+					}
+				],
+				"name": "setText",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"HelloWorld.sol": "IHelloWOrld"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"HelloWorld.sol": {
+			"keccak256": "0xffa45fb39e758b1f039cbec778d05ec2370a478a36003b33a840cb973c3091c8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bd321deeb1a27958c4d9f735751c37f685f1797c5b6aa215596f46f34f071358",
+				"dweb:/ipfs/QmZDZjTG8xwSDVjm6Gnpxst8hYVmGviXCce4SZx9Tbn6nF"
+			]
+		}
+	},
+	"version": 1
+}
