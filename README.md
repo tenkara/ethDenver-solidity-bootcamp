@@ -1,1 +1,0 @@
-# ethDenver-solidity-bootcamp
